@@ -522,7 +522,7 @@ SELECT * FROM AIRBNB.DEV.SCD_RAW_LISTINGS WHERE ID=3176;
 ## Assignment: Snapshots for raw_hosts
 The contents of `snapshots/raw_hosts_snapshot.yml`:
 ```yaml
-snapshots:
+# snapshots:
   - name: scd_raw_hosts
     relation: source('airbnb', 'hosts')
     config:

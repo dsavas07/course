@@ -1,0 +1,8 @@
+snapshots:
+  - name: scd_raw_listings
+    relation: source('airbnb', 'listings')
+    config:
+      unique_key: id
+      updated_at: updated_at
+      strategy: timestamp # check: monitor specific columns; macros can also be employed for more customization.
+      hard_deletes: invalidate # new_record is also a newer option that marks records as deleted instead of removing them from the table. This can be useful for auditing and historical analysis.
