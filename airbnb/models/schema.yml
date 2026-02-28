@@ -88,3 +88,5 @@ models:
 
   - name: fct_reviews
     description: Sample description for fct_reviews.
+  - name: mart_fullmoon_reviews
+    description: Sample description for mart_fullmoon_reviews model.
